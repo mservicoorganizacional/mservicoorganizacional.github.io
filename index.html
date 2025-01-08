@@ -251,8 +251,10 @@
             }
             emailjs.send('service_2uq8zfi', 'template_te6kk9z', template_params  ,this)
                 .then(() => {
+                    alert('Email enviado com sucesso');
                     console.log('SUCCESS!');
                 }, (error) => {
+                    alert('Falha ao enviar email');
                     console.log('FAILED...', error);
                 });
             });
